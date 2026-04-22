@@ -305,6 +305,8 @@ body{
   height: 500px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top;
+  transform: translateY(10px);
   box-shadow: 0 0 40px rgba(99,102,241,0.3);
   max-width: 100%;
 }
