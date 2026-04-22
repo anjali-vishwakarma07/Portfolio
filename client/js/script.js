@@ -2,21 +2,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Animate skill bars on scroll
   const skills = document.querySelectorAll(".skill-progress");
-  let animated = false;
 
   function showSkills() {
-    if (animated) return;
-
     skills.forEach(skill => {
       const position = skill.getBoundingClientRect().top;
-
       if (position < window.innerHeight - 100) {
         skill.style.width = skill.getAttribute("data-width");
-        animated = true;
+
       }
     });
   }
-
   window.addEventListener("scroll", showSkills);
 
   // ================= CONTACT FORM =================
